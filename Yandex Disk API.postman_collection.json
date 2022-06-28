@@ -1,0 +1,319 @@
+{
+	"info": {
+		"_postman_id": "14618461-e9f6-4bcd-836b-8fd6e6a960fc",
+		"name": "Yandex Disk API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20865479"
+	},
+	"item": [
+		{
+			"name": "Disk info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AQAAAAAZmXzPAADLWyS1Dw1H9UI9j55Uzhqag2g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cloud-api.yandex.net/v1/disk/",
+					"protocol": "https",
+					"host": [
+						"cloud-api",
+						"yandex",
+						"net"
+					],
+					"path": [
+						"v1",
+						"disk",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "File info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AQAAAAAZmXzPAADLWyS1Dw1H9UI9j55Uzhqag2g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cloud-api.yandex.net/v1/disk/resources?path=Test/testfile.png",
+					"protocol": "https",
+					"host": [
+						"cloud-api",
+						"yandex",
+						"net"
+					],
+					"path": [
+						"v1",
+						"disk",
+						"resources"
+					],
+					"query": [
+						{
+							"key": "path",
+							"value": "Test/testfile.png"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Meta info about folder",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AQAAAAAZmXzPAADLWyS1Dw1H9UI9j55Uzhqag2g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cloud-api.yandex.net/v1/disk/resources?path=Test",
+					"protocol": "https",
+					"host": [
+						"cloud-api",
+						"yandex",
+						"net"
+					],
+					"path": [
+						"v1",
+						"disk",
+						"resources"
+					],
+					"query": [
+						{
+							"key": "path",
+							"value": "Test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create file",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AQAAAAAZmXzPAADLWyS1Dw1H9UI9j55Uzhqag2g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cloud-api.yandex.net/v1/disk/resources/upload?path=Test/testfile.png",
+					"protocol": "https",
+					"host": [
+						"cloud-api",
+						"yandex",
+						"net"
+					],
+					"path": [
+						"v1",
+						"disk",
+						"resources",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "path",
+							"value": "Test/testfile.png"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put file",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AQAAAAAZmXzPAADLWyS1Dw1H9UI9j55Uzhqag2g",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/C:/Users/пк/Downloads/testfile.png"
+					}
+				},
+				"url": {
+					"raw": "https://uploader58j.disk.yandex.net:443/upload-target/20220626T184711.598.utd.8s9ukdo11xgy1vjt8z47yee8f-k58j.2105169",
+					"protocol": "https",
+					"host": [
+						"uploader58j",
+						"disk",
+						"yandex",
+						"net"
+					],
+					"port": "443",
+					"path": [
+						"upload-target",
+						"20220626T184711.598.utd.8s9ukdo11xgy1vjt8z47yee8f-k58j.2105169"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create folder",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AQAAAAAZmXzPAADLWyS1Dw1H9UI9j55Uzhqag2g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cloud-api.yandex.net/v1/disk/resources?path=Test",
+					"protocol": "https",
+					"host": [
+						"cloud-api",
+						"yandex",
+						"net"
+					],
+					"path": [
+						"v1",
+						"disk",
+						"resources"
+					],
+					"query": [
+						{
+							"key": "path",
+							"value": "Test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete folder",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "AQAAAAAZmXzPAADLWyS1Dw1H9UI9j55Uzhqag2g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cloud-api.yandex.net/v1/disk/resources?path=Test&permanently=true",
+					"protocol": "https",
+					"host": [
+						"cloud-api",
+						"yandex",
+						"net"
+					],
+					"path": [
+						"v1",
+						"disk",
+						"resources"
+					],
+					"query": [
+						{
+							"key": "path",
+							"value": "Test"
+						},
+						{
+							"key": "permanently",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
