@@ -9,7 +9,7 @@
 > 
 > Port: 5005
 
----
+
 
 ## EP_1
 
@@ -42,32 +42,32 @@ Response:
  ![image](https://user-images.githubusercontent.com/105673183/176777131-e6449af3-a4f4-4baf-8015-e0106b223574.png)
 
 
-***
+
 
 ## EP_2
 
-> Method: POST
->
-> EndPoint: /user_info_3
->
->Request form data: 
->
-> - name: str
-> 
-> - age: int
-> 
-> - salary: int
->
->Response: 
->
->        {'name': name,
->          'age': age,
->          'salary': salary,          
->          'family': {'children':          
->          [['Alex', 24],
->          ['Kate', 12]],       
->           'u_salary_1_5_year': salary * 4}
->           }
+- Method: POST
+
+- EndPoint: /user_info_3
+
+- Request form data: 
+
+  - name: str
+ 
+  - age: int
+ 
+  - salary: int
+
+- Response: 
+
+        {'name': name,
+          'age': age,
+          'salary': salary,          
+          'family': {'children':          
+          [['Alex', 24],
+          ['Kate', 12]],       
+           'u_salary_1_5_year': salary * 4}
+           }
 
 _1. К URL добавить EndPoint `user_info_3`_ 
 http://162.55.220.72:5005/get_method 
@@ -80,25 +80,27 @@ Response:
 
 ![image](https://user-images.githubusercontent.com/105673183/176781900-c5016284-7c00-4537-90a4-d5104637caf9.png)
 
----
 
-№№ EP_3
+## EP_3
 
-Method: GET
-EndPoint: /object_info_1
-request url params: 
- name: str
- age: int
- weight: int
+- Method: GET
 
-response: 
-{'name': name,
+- EndPoint: /object_info_1
+
+- Request url params: 
+  - name: str
+  - age: int
+  - weight: int
+
+- Response: 
+
+      {'name': name,
           'age': age,
           'daily_food': weight * 0.012,
           'daily_sleep': weight * 2.5}
 
 
----
+
 
 ## EP_4
 
