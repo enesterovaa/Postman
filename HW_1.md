@@ -21,7 +21,7 @@ response:
     “Str”
 ]
 
- ![](D:\QA\imagesScreenshot_4.jpg)
+ ![](D:\QA\images\Screenshot_4.jpg)
 
 ==================
 
