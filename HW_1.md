@@ -1,5 +1,6 @@
 # Homework 1 Postman
 
+
 ### Создать запросы в Postman 
 
 > Protocol: http
@@ -8,50 +9,81 @@
 > 
 > Port: 5005
 
-EP_1
-Method: GET
+---
 
-EndPoint: /get_method
+## EP_1
 
-request url params: 
 
- name: str
+- Method: GET
  
- age: int
+- EndPoint: /get_method
+ 
+- Request url params: 
+ 
+  - name: str
+ 
+  - age: int
+ 
+- Response: 
 
-response: 
-[
+       [
+          “Str”,
+    
+          “Str”    
+        ]
 
-    “Str”,
-    
-    “Str”
-    
-]
+_1. К URL добавить EndPoint `get_method`_ 
+http://162.55.220.72:5005/get_method 
+
+_2. Во вкладке Params ввести key `name` , value `Ekaterina` ; key `age`, value `31`_
+
+Response:
 
  ![image](https://user-images.githubusercontent.com/105673183/176777131-e6449af3-a4f4-4baf-8015-e0106b223574.png)
 
 
-==================
+***
 
-EP_2
-Method: POST
-EndPoint: /user_info_3
-request form data: 
- name: str
- age: int
- salary: int
+## EP_2
 
-response: 
-{'name': name,
-          'age': age,
-          'salary': salary,
-          'family': {'children': [['Alex', 24], ['Kate', 12]],
-                     'u_salary_1_5_year': salary * 4}}
+> Method: POST
+>
+> EndPoint: /user_info_3
+>
+>Request form data: 
+>
+> - name: str
+> 
+> - age: int
+> 
+> - salary: int
+>
+>Response: 
+>
+>        {'name': name,
+>          'age': age,
+>          'salary': salary,          
+>          'family': {'children':          
+>          [['Alex', 24],
+>          ['Kate', 12]],       
+>           'u_salary_1_5_year': salary * 4}
+>           }
 
+_1. К URL добавить EndPoint `user_info_3`_ 
+http://162.55.220.72:5005/get_method 
 
-==================
+_2. Во вкладке Body выбрать form-data. Ввести key `name` , value `Ekaterina` ; key `age`, value `31`; key `salary`, value `1000`_
 
-EP_3
+![image](https://user-images.githubusercontent.com/105673183/176781829-c5f2e95d-9adf-4b44-8a97-cb9a7ac6c334.png)
+
+Response:
+
+![image](https://user-images.githubusercontent.com/105673183/176781900-c5016284-7c00-4537-90a4-d5104637caf9.png)
+
+---
+
+№№ EP_3
+
 Method: GET
 EndPoint: /object_info_1
 request url params: 
@@ -66,9 +98,10 @@ response:
           'daily_sleep': weight * 2.5}
 
 
-==================
+---
 
-EP_4
+## EP_4
+
 Method: GET
 EndPoint: /object_info_2
 request url params: 
@@ -88,9 +121,10 @@ response:
           }
 
 
-==================
+---
 
-EP_5
+## EP_5
+
 Method: GET
 EndPoint: /object_info_3
 request url params: 
@@ -111,9 +145,10 @@ response:
           }
 
 
-==================
+---
 
-EP_6
+## EP_6
+
 Method: GET
 EndPoint: /object_info_4
 request url params: 
@@ -127,9 +162,9 @@ response:
           'salary': [salary, str(salary * 2), str(salary * 3)]}
 
 
-==================
+---
 
-EP_7
+## EP_7
 Method: POST
 EndPoint: /user_info_2
 request form data: 
