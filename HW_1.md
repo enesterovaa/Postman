@@ -10,9 +10,13 @@
 
 EP_1
 Method: GET
+
 EndPoint: /get_method
+
 request url params: 
+
  name: str
+ 
  age: int
 
 response: 
@@ -21,8 +25,8 @@ response:
     “Str”
 ]
 
+ ![image](https://user-images.githubusercontent.com/105673183/176777131-e6449af3-a4f4-4baf-8015-e0106b223574.png)
 
- ![](D:\QA\images\Screenshot_4.jpg)
 
 ==================
 
