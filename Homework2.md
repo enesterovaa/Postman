@@ -239,7 +239,7 @@ Environments -> + -> HW_2 -> name; age; salary. Значения оставит�
 21. Написать цикл который выведет в консоль по порядку элементы списка из параметра salary.
 
         for (let i of resp.salary) {  
-                console.log(i);  
+                console.log("Loop", i);  
         }
         
 ![image](https://user-images.githubusercontent.com/105673183/176964594-9119864e-36a2-4c1c-8e34-16dd5bc82b6a.png)
@@ -256,9 +256,9 @@ Environments -> + -> HW_2 -> name; age; salary. Значения оставит�
 
 4. Отправить запрос.
 
-![image](https://user-images.githubusercontent.com/105673183/176965556-7c7628b0-8caf-4163-a93b-d53a8ca3550a.png)
+![image](https://user-images.githubusercontent.com/105673183/176971270-d2dc520c-a1ad-467f-8f3e-56364c2ea0a8.png)
 
-2. Статус код 200
+5. Статус код 200.
 
 Добавила код проверки 200-го  статуса в общие тесты коллекции.
 
@@ -266,34 +266,79 @@ Environments -> + -> HW_2 -> name; age; salary. Значения оставит�
 
 6. Спарсить response body в json.
 
+        let resp = pm.response.json();
+        console.log("Response", resp);
+
+![image](https://user-images.githubusercontent.com/105673183/176971416-41c695ec-649c-41f6-9b85-b3241f33b619.png)
+
 7. Спарсить request.
 
-8. Проверить, что json response имеет параметр start_qa_salary
+        let req = request.data
+        console.log("Request", req);
 
-9. Проверить, что json response имеет параметр qa_salary_after_6_months
+![image](https://user-images.githubusercontent.com/105673183/176971440-b95d4604-9d36-4343-879b-5b8cfc43f389.png)
 
-10. Проверить, что json response имеет параметр qa_salary_after_12_months
+8. Проверить, что json response имеет параметр start_qa_salary.
 
-11. Проверить, что json response имеет параметр qa_salary_after_1.5_year
+![image](https://user-images.githubusercontent.com/105673183/176971600-90c7c192-c60e-49d2-8220-e381d394b937.png)
 
-12. Проверить, что json response имеет параметр qa_salary_after_3.5_years
+9. Проверить, что json response имеет параметр qa_salary_after_6_months.
 
-13. Проверить, что json response имеет параметр person
+![image](https://user-images.githubusercontent.com/105673183/176971756-9412efa9-a954-40f9-ab78-994adb605c93.png)
+
+10. Проверить, что json response имеет параметр qa_salary_after_12_months.
+
+![image](https://user-images.githubusercontent.com/105673183/176971811-d446a559-7c9d-4aec-a2c1-22ffc59f1b9b.png)
+
+11. Проверить, что json response имеет параметр qa_salary_after_1.5_year.
+
+![image](https://user-images.githubusercontent.com/105673183/176971887-986095ab-6cd3-4800-a37a-bc2592047115.png)
+
+12. Проверить, что json response имеет параметр qa_salary_after_3.5_years.
+
+![image](https://user-images.githubusercontent.com/105673183/176971937-c2c2caee-4eaa-4d4c-9239-afbb2c6ad298.png)
+
+13. Проверить, что json response имеет параметр person.
+
+![image](https://user-images.githubusercontent.com/105673183/176972062-9ab8fced-bc1e-4b6d-8b54-bfe1cd066d3a.png)
 
 14. Проверить, что параметр start_qa_salary равен salary из request (salary забрать из request.)
 
+![image](https://user-images.githubusercontent.com/105673183/176973981-8063c057-757d-4f5b-9701-52773e7e2961.png)
+
 15. Проверить, что параметр qa_salary_after_6_months равен salary*2 из request (salary забрать из request.)
+
+![image](https://user-images.githubusercontent.com/105673183/176974038-34f3753c-1f99-47d5-aa00-f0b57e442604.png)
 
 16. Проверить, что параметр qa_salary_after_12_months равен salary*2.7 из request (salary забрать из request.)
 
+![image](https://user-images.githubusercontent.com/105673183/176974232-6ea6e066-18d7-4ec7-8c0b-4e014d2b2f28.png)
+
 17. Проверить, что параметр qa_salary_after_1.5_year равен salary*3.3 из request (salary забрать из request.)
+
+![image](https://user-images.githubusercontent.com/105673183/176974297-fbd52cf1-cdcd-48c2-993f-8ad1bd0b1aaf.png)
 
 18. Проверить, что параметр qa_salary_after_3.5_years равен salary*3.8 из request (salary забрать из request.)
 
+![image](https://user-images.githubusercontent.com/105673183/176974426-f6186474-cda8-408f-89e0-0e672f6d6929.png)
+
 19. Проверить, что в параметре person, 1-й элемент из u_name равен salary из request (salary забрать из request.)
+
+![image](https://user-images.githubusercontent.com/105673183/176974476-1b61acf3-794a-40d9-927a-e44e747f0c95.png)
 
 20. Проверить, что что параметр u_age равен age из request (age забрать из request.)
 
+![image](https://user-images.githubusercontent.com/105673183/176974507-0a62eaa8-0a55-4ccb-9fb5-7c6341e554b7.png)
+
 21. Проверить, что параметр u_salary_5_years равен salary*4.2 из request (salary забрать из request.)
 
+![image](https://user-images.githubusercontent.com/105673183/176974555-b3cdff98-a655-43e3-b4f1-f17e92df192d.png)
+
 22. ***Написать цикл который выведет в консоль по порядку элементы списка из параметра person.
+
+        for (let i in resp.person) {  
+        console.log("Loop", i);  
+	    }
+            
+![image](https://user-images.githubusercontent.com/105673183/176974762-dd2267c0-04aa-47ba-8b53-5939e7040c78.png)
+            
