@@ -70,7 +70,7 @@ Response:
            }
 
 _1. К URL добавить EndPoint `user_info_3`_ 
-http://162.55.220.72:5005/get_method 
+http://162.55.220.72:5005/user_info_3
 
 _2. Во вкладке Body выбрать form-data. Ввести key `name` , value `Ekaterina` ; key `age`, value `31`; key `salary`, value `1000`_
 
@@ -99,20 +99,30 @@ Response:
           'daily_food': weight * 0.012,
           'daily_sleep': weight * 2.5}
 
+_1. К URL добавить EndPoint `object_info_1`_ 
+http://162.55.220.72:5005/object_info_1 
+
+_2. Во вкладке Params ввести key `name` , value `Ekaterina` ; key `age`, value `31` , key `weight` , value `53`_
+
+
+![image](https://user-images.githubusercontent.com/105673183/176845616-c8c9c7a2-0b33-4f58-b339-f5d410effef2.png)
 
 
 
 ## EP_4
 
-Method: GET
-EndPoint: /object_info_2
-request url params: 
- name: str
- age: int
- salary: int
+- Method: GET
 
-response: 
-{'start_qa_salary': salary,
+- EndPoint: /object_info_2
+
+- Request url params: 
+  - name: str
+  - age: int
+  - salary: int
+
+- Response: 
+
+      {'start_qa_salary': salary,
           'qa_salary_after_6_months': salary * 2,
           'qa_salary_after_12_months': salary * 2.7,
           'qa_salary_after_1.5_year': salary * 3.3,
@@ -122,6 +132,16 @@ response:
                      'u_salary_5_years': salary * 4.2}
           }
 
+_1. К URL добавить EndPoint `object_info_2`_ 
+http://162.55.220.72:5005/object_info_2 
+
+_2. Во вкладке Params ввести key `name` , value `Ekaterina` ; key `age`, value `31`; key `salary`, value `1000`_
+
+![image](https://user-images.githubusercontent.com/105673183/176874380-83691f1a-0456-42ab-81bc-5aac909db7de.png)
+
+Response:
+
+![image](https://user-images.githubusercontent.com/105673183/176875049-e492fa01-73c2-44b2-bfc2-c5453e13fff0.png)
 
 ---
 
