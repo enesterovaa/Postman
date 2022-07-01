@@ -147,15 +147,21 @@ Response:
 
 ## EP_5
 
-Method: GET
-EndPoint: /object_info_3
-request url params: 
- name: str
- age: int
- salary: int
+- Method: GET
 
-response: 
-{'name': name,
+- EndPoint: /object_info_3
+
+- Request url params: 
+  
+  - name: str
+
+  - age: int
+
+  - salary: int
+
+- Response: 
+
+      {'name': name,
           'age': age,
           'salary': salary,
           'family': {'children': [['Alex', 24], ['Kate', 12]],
@@ -166,36 +172,69 @@ response:
                      'u_salary_1_5_year': salary * 4}
           }
 
+_1. К URL добавить EndPoint `object_info_3`_ 
+http://162.55.220.72:5005/object_info_3 
+
+_2. Во вкладке Params ввести key `name` , value `Ekaterina` ; key `age`, value `31`; key `salary`, value `1000`_
+
+![image](https://user-images.githubusercontent.com/105673183/176876467-e7e10e85-f346-483d-bb56-e21738a7f59c.png)
+
+Response:
+
+![image](https://user-images.githubusercontent.com/105673183/176876630-af6b889f-c061-4085-a1ac-6a7f9c7942ae.png)
+
 
 ---
 
 ## EP_6
 
-Method: GET
-EndPoint: /object_info_4
-request url params: 
- name: str
- age: int
- salary: int
+- Method: GET
 
-response: 
-{'name': name,
+- EndPoint: /object_info_4
+
+- Request url params: 
+
+  - name: str
+
+  - age: int
+
+  - salary: int
+
+- Response: 
+
+      {'name': name,
           'age': int(age),
           'salary': [salary, str(salary * 2), str(salary * 3)]}
+
+_1. К URL добавить EndPoint `object_info_4`_ 
+http://162.55.220.72:5005/object_info_4 
+
+_2. Во вкладке Params ввести key `name` , value `Ekaterina` ; key `age`, value `31`; key `salary`, value `1000`_
+
+Response:
+
+![image](https://user-images.githubusercontent.com/105673183/176877076-5b8e0d15-253a-451c-9e65-486fce3a621d.png)
 
 
 ---
 
 ## EP_7
-Method: POST
-EndPoint: /user_info_2
-request form data: 
- name: str
- age: int
- salary: int
 
-response: 
-{'start_qa_salary': salary,
+- Method: POST
+
+- EndPoint: /user_info_2
+
+- Request form data: 
+
+  - name: str
+
+  - age: int
+
+  - salary: int
+
+-Response: 
+
+     {'start_qa_salary': salary,
           'qa_salary_after_6_months': salary * 2,
           'qa_salary_after_12_months': salary * 2.7,
           'qa_salary_after_1.5_year': salary * 3.3,
@@ -204,3 +243,14 @@ response:
                      'u_age': age,
                      'u_salary_5_years': salary * 4.2}
           }
+
+_1. К URL добавить EndPoint `user_info_2`_ 
+http://162.55.220.72:5005/user_info_2 
+
+_2. Во вкладке Params ввести key `name` , value `Ekaterina` ; key `age`, value `31`; key `salary`, value `1000`_
+
+![image](https://user-images.githubusercontent.com/105673183/176878010-de4dfad8-37d4-4bbd-89f6-9bd3a232a8e0.png)
+
+Response:
+
+![image](https://user-images.githubusercontent.com/105673183/176878228-7d978b3b-a188-4161-984c-118756edd47e.png)
