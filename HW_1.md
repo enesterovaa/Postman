@@ -9,9 +9,9 @@
 > 
 > Port: 5005
 
+---
 
-
-## EP_1
+## Endpoint 1
 
 
 - Method: GET
@@ -28,7 +28,6 @@
 
        [
           “Str”,
-    
           “Str”    
         ]
 
@@ -41,10 +40,9 @@ Response:
 
  ![image](https://user-images.githubusercontent.com/105673183/176777131-e6449af3-a4f4-4baf-8015-e0106b223574.png)
 
+---
 
-
-
-## EP_2
+## Endpoint 2
 
 - Method: POST
 
@@ -80,8 +78,9 @@ Response:
 
 ![image](https://user-images.githubusercontent.com/105673183/176781900-c5016284-7c00-4537-90a4-d5104637caf9.png)
 
+---
 
-## EP_3
+## Endpoint 3
 
 - Method: GET
 
@@ -104,12 +103,13 @@ http://162.55.220.72:5005/object_info_1
 
 _2. Во вкладке Params ввести key `name` , value `Ekaterina` ; key `age`, value `31` , key `weight` , value `53`_
 
+Response:
 
 ![image](https://user-images.githubusercontent.com/105673183/176845616-c8c9c7a2-0b33-4f58-b339-f5d410effef2.png)
 
+---
 
-
-## EP_4
+## Endpoint 4
 
 - Method: GET
 
@@ -145,7 +145,7 @@ Response:
 
 ---
 
-## EP_5
+## Endpoint 5
 
 - Method: GET
 
@@ -186,7 +186,7 @@ Response:
 
 ---
 
-## EP_6
+## Endpoint 6
 
 - Method: GET
 
@@ -218,7 +218,7 @@ Response:
 
 ---
 
-## EP_7
+## Endpoint 7
 
 - Method: POST
 
@@ -247,7 +247,7 @@ Response:
 _1. К URL добавить EndPoint `user_info_2`_ 
 http://162.55.220.72:5005/user_info_2 
 
-_2. Во вкладке Params ввести key `name` , value `Ekaterina` ; key `age`, value `31`; key `salary`, value `1000`_
+_2. Во вкладке Body выбрать form-data. Ввести key `name` , value `Ekaterina` ; key `age`, value `31`; key `salary`, value `1000`_
 
 ![image](https://user-images.githubusercontent.com/105673183/176878010-de4dfad8-37d4-4bbd-89f6-9bd3a232a8e0.png)
 
