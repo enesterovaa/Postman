@@ -1,3 +1,3 @@
 # Postman
 
-Homeworks from Vadim Ksendzov course.
+Homeworks from Vadim Ksendzov's course.
