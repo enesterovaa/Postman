@@ -1,3 +1,3 @@
 # Postman
 
-Homeworks from Vadim Ksendzov's course.
+This repo contains homeworks from Vadim Ksendzov's course.
